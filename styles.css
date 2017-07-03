@@ -1,39 +1,65 @@
-*{
+/**{
   font-family: 'Merriweather', serif;
   font-family: 'Roboto', sans-serif;
-}
-
+}*/
 .newsletterPage{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+
+}
+
+.newsletterHeader{
+  padding-bottom: .42em;
+  border-bottom: solid black;
+}
+
+.logoNavBar{
+  float:left;
+  height: 2.5em;
+  display:flow-root;
+}
+
+
+
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: .5em;
+  text-decoration: underline;
+
+  }
+
+
+  .mainNavigationBar{
+  text-transform: uppercase;
+  background-color: white;
+
+}
+
+.mainNavigationBar a{
+  color: black;
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-right: 1em;
+
+}
+
+.mainNavigationBar a:hover{
+  color: brown;
+  text-decoration: underline;
 }
 
 .newsletterBackground{
   background-image: url('images/background-2.jpg');
   background-size: cover;
-  align-self: center;
-  z-index: -1;
+  height: 100vh;
 }
-
-.mainNavigationBar{
-  display: flex;
-  justify-content: space-around;
-  text-transform: uppercase;
-  font-size: 2em;
-  z-index: 1000;
-  width: 100%;
-  background-color: white;
-  z-index: 0;
-}
-
-.mainNavigationBar a{
-  text-decoration: none;
-  color: black;
-
-}
-
 
 .newsletterSignUp{
   align-self: center;
@@ -45,5 +71,8 @@
 }
 
 .newsletterFooter{
-  display: none;
+  text-align: left;
+  color: white;
+  background-color: darkgreen;
+  width: 100%;
 }
