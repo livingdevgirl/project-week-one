@@ -11,13 +11,25 @@
 
 }*/
 
+/**{
+  margin: 0
+
+  fixes the width of the page, but doesn't make the header scroll.
+}*/
+
+body{
+  margin: 0;
+}
+
 header{
   width: 100%;
   position:fixed;
-  overflow: scroll;
+  /*overflow: scroll;*/
   height: 3em;
   background: white;
   padding-top: 1em;
+  top:0;
+  margin: 0;
 
 }
 
@@ -107,6 +119,8 @@ button{
   font-size: 1.1em;
   width: 100%;
   padding-top: 2em;
+  border-bottom: 2px solid #968772;
+  margin-bottom: 1em;
 
 }
 
@@ -116,7 +130,13 @@ button{
   width: 100%;
   font-size: 1.1em;
   padding-top:2em;
+  border-bottom: 2px solid #968772;
+  margin-bottom: 1.2em;
 
+}
+
+hr :hover{
+  color: #967343
 }
 
 footer{
@@ -124,4 +144,8 @@ footer{
   color: white;
   background-color: darkgreen;
   width: 100%;
+}
+
+.newsletterFooter{
+  display: none;
 }
