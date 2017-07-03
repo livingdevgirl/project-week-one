@@ -2,3 +2,48 @@
   font-family: 'Merriweather', serif;
   font-family: 'Roboto', sans-serif;
 }
+
+.newsletterPage{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.newsletterBackground{
+  background-image: url('images/background-2.jpg');
+  background-size: cover;
+  align-self: center;
+  z-index: -1;
+}
+
+.mainNavigationBar{
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 2em;
+  z-index: 1000;
+  width: 100%;
+  background-color: white;
+  z-index: 0;
+}
+
+.mainNavigationBar a{
+  text-decoration: none;
+  color: black;
+
+}
+
+
+.newsletterSignUp{
+  align-self: center;
+  padding: 2em;
+  background-color: white;
+  width: 60%;
+  margin: 5em 10em 5em 10em;
+
+}
+
+.newsletterFooter{
+  display: none;
+}
