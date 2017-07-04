@@ -19,6 +19,12 @@
 
 body{
   margin: 0;
+  background-color: #F2F1E8;
+  color: #131511;
+}
+
+a{
+  color: #968772;
 }
 
 header{
@@ -108,9 +114,14 @@ nav{
 
 button{
   background-color: #968772;
-  color: white;
+  color: #F2F1E8;
   font-size: 1.1em;
   padding: .5em 1em;
+}
+
+button hover{
+  background-color: #967343;
+  color: #FFFFFF;
 }
 
 #userName{
@@ -135,8 +146,13 @@ button{
 
 }
 
-hr :hover{
-  color: #967343
+#userName hover{
+  border-bottom: 2px solid #967343;
+}
+
+#userEmail hover{
+  border-bottom: 2px solid #967343;
+
 }
 
 footer{
@@ -144,8 +160,4 @@ footer{
   color: white;
   background-color: darkgreen;
   width: 100%;
-}
-
-.newsletterFooter{
-  display: none;
 }
