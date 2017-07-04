@@ -39,6 +39,25 @@ header{
 
 }
 
+h1{
+  font-family: 'Merriweather', serif;
+  font-size: 4em;
+  font-weight: 500;
+  line-height: .5em;
+}
+
+h2{
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: .5em;
+}
+
+.pageHeading{
+  padding-top: 6em;
+  text-align: center;
+}
+
 .logoNavBar{
   float:left;
   height: 2.8em;
@@ -87,7 +106,7 @@ nav{
   height: 100vh;
 }
 
-.newsletterBackground, h1{
+.newsletterBackground h1{
   font-family: 'Merriweather', serif;
   font-weight: 300;
   font-size: 1.5em;
@@ -155,7 +174,91 @@ button hover{
 
 }
 
+/*Images Container for index.html and image scaling*/
+h4{
+  font-family: 'Merriweather', serif;
+  background-color: #2B2F26;
+  font-weight: 300;
+  padding: 1em 1em;
+  color: white;
+  margin-right:auto;
+  margin-left:0;
+}
+.wrapper {
+  max-width: 100%;
+  display:flex;
+  margin: 3em 2em;
+}
+
+.wrapper > div {
+  display:flex;
+  flex-direction: column-reverse;
+  border: 2px solid white;
+  background-color: white;
+}
+
+
+/*gridwrapper */
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(22em, auto);
+}
+.one {
+  grid-column: 1/3;
+  grid-row: 1;
+  background-image:url(images/product-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.two {
+  grid-column: 3;
+  grid-row: 1;
+  background-image:url(images/product-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.three {
+  grid-column: 4;
+  grid-row: 1;
+  background-image:url(images/product-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.four {
+  background-image:url(images/product-4.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+.five {
+  background-image:url(images/product-5.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: 2;
+  grid-row: 2;
+}
+.six {
+  background-image:url(images/product-6.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.seven{
+  background-image:url(images/product-7.jpg);
+  background-size: cover;
+  overflow: visible;
+  grid-column: 4;
+  grid-row: 2;
+}
+/*END OF GRID*/
+
 footer{
+  font-family: 'Merriweather', serif;
   text-align: left;
   color: white;
   background-color: #2B2F26;
