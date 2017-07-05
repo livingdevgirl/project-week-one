@@ -193,7 +193,7 @@ h4{
 .wrapper > div {
   display:flex;
   flex-direction: column-reverse;
-  border: 2px solid white;
+  border: 2px solid #F2F1E8;
   background-color: white;
 }
 
@@ -201,27 +201,27 @@ h4{
 /*gridwrapper */
 .wrapper{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: minmax(27em, auto);
+  grid-auto-rows: minmax(26em, auto);
 }
 
 .one {
-  grid-column: 1/3;
+  grid-column: 1/4;
   grid-row: 1;
   background-image:url(images/product-1.jpg);
   background-size: cover;
   background-position: center;
 }
 .two {
-  grid-column: 3;
+  grid-column: 4;
   grid-row: 1;
   background-image:url(images/product-2.jpg);
   background-size: cover;
   background-position: center;
 }
 .three {
-  grid-column: 4;
+  grid-column: 5;
   grid-row: 1;
   background-image:url(images/product-3.jpg);
   background-size: cover;
@@ -245,7 +245,7 @@ h4{
   background-image:url(images/product-6.jpg);
   background-size: cover;
   background-position: center;
-  grid-column: 3;
+  grid-column: 3 / 5;
   grid-row: 2;
 }
 
@@ -253,7 +253,7 @@ h4{
   background-image:url(images/product-7.jpg);
   background-size: cover;
   overflow: visible;
-  grid-column: 4;
+  grid-column: 5;
   grid-row: 2;
 }
 /*END OF GRID*/
