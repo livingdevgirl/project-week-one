@@ -28,14 +28,29 @@
 
           <input id="userName" type="text" name="userName" placeholder="Name">
           <input id="userEmail" type="text" name="userEmail" placeholder="Email">
-          <button type="button" name="submit">Submit</button>
+          <button id="signupButton" type="button" name="submit">Submit</button>
       </form>
 
 </section>
     <footer>
       Copyright 2017, Bent Creek Ceramics
     </footer>
-
+    <script type="text/javascript">
+      var userName = document.getElementById('userName');
+      var userEmail = document.getElementById('userEmail');
+      var signupButton = document.getElementById('signupButton');
+      signupButton.addEventListener('click', function(e) {
+        var nameVal = userName.value;
+        var emailVal = userEmail.value;
+        if (nameVal && emailVal) {
+          alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+          userName.value = "";
+          userEmail.value = "";
+        } else {
+          alert('We would love for you to sign up, please provide both your name and email address.');
+        }
+      });
+    </script>
 
   </body>
 
