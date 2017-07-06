@@ -400,14 +400,15 @@ table{
 
   font-family: "Merriweather", serif;
   border-collapse: collapse;
-  width: 70%;
+  width: 90%;
   font-size: 1.2em;
   margin-top: 2em;
   margin-bottom: 2em;
   margin-right: 9em;
   padding: 2em;
+  padding-left: 0
 }
 
-table .differentBackground{
-  background-color: #FFF;!important;
+.differentBackground td{
+  background-color:  #E6DD96; important!
 }
