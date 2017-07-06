@@ -316,10 +316,6 @@ footer{
   padding: 2em;
 }
 
-aside {
-  height: 7em;
-  width: 7em;
-}
 
 blockquote{
   clear: both;
@@ -363,10 +359,10 @@ blockquote{
 .aboutSecondArticle{
   display:flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
   padding-left: 14%;
   padding-right: 14%;
+  flex-wrap: wrap;
 }
 
 .aboutSecondArticle h2{
@@ -378,12 +374,18 @@ blockquote{
   clear:both;
   display: inline;
   font-family: "Merriweather", serif;
-  padding-bottom: 2em;
-  padding-top: 1em;
-  padding-right: 3em;
-  padding-left: 3em
+  width: 75%
 }
 
-.aboutSecondArticle img{
-  float: right;
+aside {
+  width: 25%;
+  height: 8em;
+  width: 8em;
+  object-fit: contain;
+  position: relative;
+}
+
+aside img{
+  width: 100%;
+  height: 100%;
 }
