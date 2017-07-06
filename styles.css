@@ -405,3 +405,7 @@ table{
   margin-bottom: 2em;
   margin-right: 9em;
 }
+
+.differentBackground td{
+  background-color: #F2F1E8;
+}
