@@ -392,20 +392,22 @@ aside img{
 
 table, th, td{
   border:1px solid black;
+  padding: 1em;
 
 }
 
 table{
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather", serif;
   border-collapse: collapse;
   width: 70%;
   font-size: 1.2em;
   margin-top: 2em;
   margin-bottom: 2em;
   margin-right: 9em;
+  padding: 2em;
 }
 
-.differentBackground td{
-  background-color: #F2F1E8;
+table .differentBackground{
+  background-color: #FFF;!important;
 }
