@@ -272,13 +272,19 @@ h4{
 }
 /*END OF GRID*/
 
-.aboutMainArticle{
+.aboutMainArticle h1{
   display:flex;
   align-items: center;
   justify-content: center;
   flex-wrap:wrap;
   padding:  8%;
 
+}
+
+.aboutMainArticle {
+  width: 80%;
+  margin-left:10%;
+  margin-right: 10%
 }
 
 .aboutMainArticle div{
@@ -303,7 +309,6 @@ h4{
   font-family: "Merriweather", serif;
   font-size: 1.3em;
   line-height: 1.7em;
-  padding-right: 1em;
   padding-bottom: 2em;
   font-weight: 400;
 }
@@ -357,6 +362,14 @@ blockquote{
 }
 
 .aboutSecondArticle{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-wrap: wrap;
+
+}
+
+.aboutSecondArticle h1{
   display:flex;
   align-items: center;
   justify-content: space-around;
@@ -372,12 +385,14 @@ blockquote{
 
 .aboutSecondArticle div{
   clear:both;
-  display: inline;
+  display: inline-block;
   font-family: "Merriweather", serif;
   width: 75%
 }
 
 aside {
+  float: right;
+  display: inline-block;
   width: 25%;
   height: 8em;
   width: 8em;
